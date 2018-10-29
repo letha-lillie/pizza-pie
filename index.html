@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="favicon.ico">
+  <!-- http://www.xiconeditor.com/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Kate's Pizza Pies</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Treat yo'self to an extravagent pizza pie!</h2>
+      <p><i>Your Kate's Pizza Pie will come with house-made chipotle marinara & mozzarella cheese</i></p>
+    </div>
+    <form id="pizza_pie">
+      <div class="form-group">
+        <p>Choose a pie size (prices for pie without toppings):</p>
+        <div class="radio">
+          <label>
+          <input type="radio" name="size" value="small">Small (10"): $10 (plain)
+        </label>
+          <div class="radio">
+            <label>
+          <input type="radio" name="size" value="medium">Medium (12"): $13
+        </label>
+          </div>
+          <div class="radio">
+            <label>
+          <input type="radio" name="size" value="large">Family size (16"): $16
+        </label>
+          </div>
+        </div>
+        <p>Protein toppings (+ $3 each):</p>
+        <input type="checkbox" name="protein" value="Roasted chicken">Roasted chicken<br>
+        <input type="checkbox" name="protein" value="Pulled pork">Pulled pork<br>
+        <input type="checkbox" name="protein" value="Olympic Provisions pepperoni">Olympic Provisions pepperoni<br>
+        <input type="checkbox" name="protein" value="Dong's BBQ tempeh">Dong's BBQ tempeh<br>
+        <input type="checkbox" name="protein" value="Ancovies">Anchovies<br>
+        <input type="checkbox" name="protein" value="BACON">BACON<br>
+      </div>
+      <div class="form-group">
+        <p>Vegetable &c. toppings (+ $2 each):</p>
+        <input type="checkbox" name="veg-etc" value="Scallions">Scallions<br>
+        <input type="checkbox" name="veg-etc" value="Asparagus">Asparagus<br>
+        <input type="checkbox" name="veg-etc" value="Feta">Feta<br>
+        <input type="checkbox" name="veg-etc" value="Rosemary roasted potatoes">Rosemary roasted potatoes<br>
+        <input type="checkbox" name="veg-etc" value="Wild mushrooms of-the-day">Wild mushrooms of-the-day<br>
+        <input type="checkbox" name="veg-etc" value="Roasted delicata squash">Roasted delicata squash<br>
+        <input type="checkbox" name="veg-etc" value="Seasonal veg 1">Seasonal veg 1<br>
+        <input type="checkbox" name="veg-etc" value="Seasonal veg 2">Seasonal veg 2<br>
+        <input type="checkbox" name="veg-etc" value="Proprietary fresh herb blend">Proprietary fresh herb blend<br>
+      </div>
+      <button type="submit">Confirm your order:</button>
+    </form>
+    <br>
+    <span id="protein-choices">
+      <p><b>Protein:</b></p>
+
+
+    </span><br>
+    <span id="veg-etc-choices">
+      <p><b>Veg et al.:</b></p>
+    </span><br>
+    <span id="total-price">
+    <p><b>Cost of your delicious pizza pie:</b></p>
+  </span>
+  </div>
+</body>
+
+</html>

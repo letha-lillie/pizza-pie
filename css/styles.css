@@ -1,0 +1,13 @@
+#protein {
+  display: none;
+}
+#veg-etc {
+  display: none;
+}
+.jumbotron {
+  margin: 20px;
+  background-color: #90EE90;
+}
+button {
+  background-color: #90EE90;
+}
