@@ -27,7 +27,7 @@ $(document).ready(function() {
     $("input:checkbox[name=protein]:checked").each(function() {
       var proteinChoices = $(this).val();
 
-      $("#protein-choices").append(proteinChoices + "<br>");
+      $("#protein-choices").text(proteinChoices + "<br>");
     });
 
     $("input:checkbox[name=veg-etc]:checked").each(function() {
