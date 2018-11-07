@@ -20,26 +20,32 @@ Pizza.prototype.totalPrice = function() {
 $(document).ready(function() {
   $("form#pizza_pie").submit(function(event) {
     event.preventDefault();
-
     var inputtedSize = $("input[name=size]:checked").val();
     var inputtedProtein = $("input:checkbox[name=protein]:checked").length;
     var inputtedVeg = $("input:checkbox[name=veg-etc]:checked").length;
     var pizza = new Pizza(inputtedSize, inputtedProtein, inputtedVeg);
-
-    $("#protein-choices").show();
     $("input:checkbox[name=protein]:checked").each(function() {
       var proteinChoices = $(this).val();
-      var capitalProteinToppings = proteinChoices.toUpperCase();
-      $("#protein-choices").append(capitalProteinToppings + "<br>");
+
+      $("#protein-choices").append(proteinChoices + "<br>");
     });
-    $("#veg-etc-choices").show();
+
     $("input:checkbox[name=veg-etc]:checked").each(function() {
       var vegChoices = $(this).val();
-      var capitalVegToppings = vegChoices.toUpperCase();
-      $("#veg-etc-choices").append(capitalVegToppings + "<br>");
+
+      $("#veg-etc-choices").append(vegChoices + "<br>");
 
     });
+
     $("#total-price").append("$" + pizza.totalPrice());
     $("#pizza_pie").hide();
+    $("#pizza-confirmation").show();
   });
+  // button back to menu:
+  $("button#menu-return").click(function(event){
+    event.preventDefault();
+    $("form#pizza_pie").show();
+    $("#pizza-confirmation").hide();
+
+  })
 });

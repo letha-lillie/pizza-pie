@@ -1,13 +1,16 @@
-#protein {
+/* #protein {
   display: none;
 }
 #veg-etc {
+  display: none;
+} */
+#pizza-confirmation {
   display: none;
 }
 .jumbotron {
   margin: 20px;
   background-image: url("img/pizza_pic.png");
-  background-blend-mode:hard-light;
+  background-blend-mode: hard-light;
   /* background-color: #90EE90; */
 }
 h2 {
