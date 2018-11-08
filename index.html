@@ -25,6 +25,7 @@
           <label>
           <input type="radio" name="size" value="small">Small (10"): $10 (plain)
         </label>
+      </div>
           <div class="radio">
             <label>
           <input type="radio" name="size" value="medium">Medium (12"): $13
@@ -36,9 +37,8 @@
         </label>
           </div>
         </div>
+        <div class="form-group">
         <p>Protein toppings (+ $3 each):</p>
-        <input type="checkbox" name="protein" value="Roasted chicken">Roasted chicken<br>
-        <input type="checkbox" name="protein" value="Pulled pork">Pulled pork<br>
         <input type="checkbox" name="protein" value="Olympic Provisions pepperoni">Olympic Provisions pepperoni<br>
         <input type="checkbox" name="protein" value="Dong's BBQ tempeh">Dong's BBQ tempeh<br>
         <input type="checkbox" name="protein" value="Ancovies">Anchovies<br>
@@ -52,29 +52,28 @@
         <input type="checkbox" name="veg-etc" value="Rosemary roasted potatoes">Rosemary roasted potatoes<br>
         <input type="checkbox" name="veg-etc" value="Wild mushrooms of-the-day">Wild mushrooms of-the-day<br>
         <input type="checkbox" name="veg-etc" value="Roasted delicata squash">Roasted delicata squash<br>
-        <input type="checkbox" name="veg-etc" value="Seasonal veg 1">Seasonal veg 1<br>
-        <input type="checkbox" name="veg-etc" value="Seasonal veg 2">Seasonal veg 2<br>
         <input type="checkbox" name="veg-etc" value="Proprietary fresh herb blend">Proprietary fresh herb blend<br>
       </div>
       <button type="submit">Confirm your order:</button>
     </form>
     <br>
     <div id="pizza-confirmation">
-      <div>
-        <b>Protein:</b>
-      <span id="protein-choices">
-      <!-- <p><b>Protein:</b></p> -->
-    </span><br>
-  </div>
-      <span id="veg-etc-choices">
+    <div>
+      <p><b>Protein:</b></p>
+      <div id="protein-choices"></div>
+    </div><br>
+    <div>
       <p><b>Veg et al.:</b></p>
-    </span><br>
-      <span id="total-price">
-    <p><b>Cost of your delicious pizza pie:</b></p>
-  </span>
-      <br><br>
-      <button id="menu-return">Back to Menu</button>
+      <div id="veg-etc-choices"></div>
     </div>
+    <br>
+    <div>
+      <p><b>Cost of your delicious pizza pie:</b></p>
+      <span id="total-price"></span>
+    </div>
+    <br><br>
+    <button id="menu-return">Back to Menu</button>
+  </div>
   </div>
 </body>
 
